@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--se um tiver btn no final, é um botão
+    se tiver inpt no final, é um input
+    dependendo da tag, pode ter a tag também
+    se não tiver nada, é uma div-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programinha legal</title>
+
+    <script defer src="../scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>USUÁRIOS</h1>
+        <div id="buttons">
+            <input type="text" id="search_inpt">
+            <button id="search_btn" onclick="search_event()">busca</button>
+        </div>
+    </header>
+
+    <div id="register">
+        <label for=""> username: </label>
+        <input type="text" id="username_inpt">
+        <label for=""> password: </label>
+        <input type="text" id="password_inpt">
+        <button id="register_btn" onclick="register_event()">cadastrar</button>
+    </div>
+
+    <main>
+        <h2>lista de usuários</h2>
+        <button id="update_list_btn">atualizar lista</button>
+        
+        <div id="list"></div>
+    </main>
+</body>
+</html>
