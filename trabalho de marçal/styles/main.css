@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --blue-gradient: linear-gradient(to right, rgb(106, 171, 255), rgb(20, 55, 255));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Open Sans";
+    color: white;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-clip: text;
+    background-image: var(--blue-gradient);
+}
+
+header > h1{
+    font-family:"Parisienne" ;
+    -webkit-text-fill-color: transparent;
+}
+
+hr{
+    position: fixed;
+    top: 0;
+    height: 7px;
+    width: 100%;
+    border: transparent;
+    background-image: var(--blue-gradient);
+
+}
+
+#search_bar{
+    width: 300px;
+    height: 30px;
+}
+
+#register{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-items: center;
+}
+
+#register_btn{
+    width: 200px;
+}
+
+.persona{
+    background-image: var(--blue-gradient);
+    border-radius: 20px;
+    padding: 1%;
+    justify-content: space-between;
+}

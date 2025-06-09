@@ -8,27 +8,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>programinha legal</title>
-
+    <link rel="stylesheet" href="../styles/main.css">
     <script defer src="../scripts/main.js"></script>
 </head>
 <body>
     <header>
-        <h1>USUÁRIOS</h1>
-        <div id="buttons">
-            <input type="text" id="search_inpt">
-            <button id="search_btn" onclick="search_event()">busca</button>
+        <hr>
+        <h1>Compendium de personas - Sala de veludo</h1>
+        <div id="search_bar">
+            <input type="text" id="search_inpt" placeholder="Nome do persona">
+            <button id="search_btn" onclick="search_event()">procurar</button>
         </div>
     </header>
 
     <div id="register">
-        <label for=""> username: </label>
-        <input type="text" id="username_inpt">
-        <button id="register_btn" onclick="register_event()">cadastrar</button>
+        <h2>ficha de persona</h2>
+            <input type="text" id="name_inpt" placeholder="nome">
+            <input type="text" id="atk_inpt" placeholder="atk">
+            <input type="text" id="def_inpt" placeholder="def">
+            <input type="text" id="tarotcard_inpt" placeholder="tarô">
+            <input type="text" id="ability_inpt" placeholder="habilidade">
+
+        <button id="register_btn" onclick="register_event()">registrar persona</button>
     </div>
 
     <main>
-        <h2>lista de usuários</h2>
-        <div id="list"></div>
+        <h2>lista de personas</h2>
+        <div id="list">
+            
+        </div>
     </main>
 </body>
 </html>
