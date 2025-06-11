@@ -26,13 +26,21 @@ main{
     transform: translate(-50%,-50%);
 }
 
-.square{
+.cell{
     border: white 3px solid;
     width: 100px;
     height: 100px;
     margin: 2px;
 }
 
-.square:hover{
+.cell_empty:hover{
     background-color: white;
+}
+
+.cell_X{
+    background-color: blue;
+}
+
+.cell_O{
+    background-color: red;
 }

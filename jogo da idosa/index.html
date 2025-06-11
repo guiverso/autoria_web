@@ -11,18 +11,10 @@
 <body>
     <header>
         <h1>Jogo da idosa</h1>
-        <h2>vez de:</h2>
+        <h2 id="h2_atualplayer"></h2>
+        <h2 id="h2_turnsqtd">turno de: <div></div></h2>
+        <button onclick="generate_grid()">refazer</button>
     </header>
-    <main>
-        <div id="cell1" class="square"></div>
-        <div id="cell2" class="square"></div>
-        <div id="cell3" class="square"></div>
-        <div id="cell4" class="square"></div>
-        <div id="cell5" class="square"></div>
-        <div id="cell6" class="square"></div>
-        <div id="cell7" class="square"></div>
-        <div id="cell8" class="square"></div>
-        <div id="cell9" class="square"></div>
-    </main>
+    <main id="grid"></main>
 </body>
 </html>
