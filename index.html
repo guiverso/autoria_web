@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Persona compendium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script type="module" src="script.js" defer></script>
+    <script type="module" src="Personas.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <h1>Compenduo de Personas</h1>
+        <nav>
+            <input type="text" name="search" id="searchbar">
+            <button type="button" id="searchbtn" data-bs-toggle="modal" data-bs-target="#searchModal">Pesquisar</button>
+        </nav>
+    </header>
+
+    <main>
+        <button data-bs-toggle="modal" data-bs-target="#registerModal">registrar</button>
+        <div>
+            <h2>List of personas</h2>
+            <table id="list">
+                <thead>
+                    <td><b>Nome</b></td>
+                    <td><b>Ataque</b></td>
+                    <td><b>Defesa</b></td>
+                    <td><b>Carta de tarô</b></td>
+                    <td>deletar</td>
+                    <td>salvar</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Ataque</td>
+                        <td>defesa</td>
+                        <td>taro</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+<!--Modal de registro-->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar Persona</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <table>
+            <tr>
+                <td><label for="">Nome:</label></td>
+                <td><input type="text" name="" id="pName"></td>
+            </tr>
+            <tr>
+                <td><label for="">Ataque:</label></td>
+                <td><input type="text" name="" id="pAtk"></td>
+            </tr>
+            <tr>
+                <td><label for="">Defesa:</label></td>
+                <td><input type="text" name="" id="pDef"></td>
+            </tr>
+            <tr>
+                <td><label for="">Carta de taro:</label></td>
+                <td><input type="text" name="" id="pTarot"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary" id="registerbtn">Registrar</button>
+    </div>
+    </div>
+</div>
+</div>
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="searchModalLabel">name</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <tr>
+                        <td>Ataque</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>defesa</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>carta de taro</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" id="editbtn">Editar</button>
+                <button type="button" class="btn btn-primary" id="deletebtn">deletar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
